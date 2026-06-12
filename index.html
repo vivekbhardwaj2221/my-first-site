@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivek Bhardwaj | Frontend Developer</title>
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">Vivek<span>.</span></div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <!-- hamburger for mobile -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== HOME SECTION ===== -->
+    <section id="home" class="home-section">
+        <div class="home-container">
+            <div class="home-img">
+                <img src="profile.jpg" alt="Vivek Bhardwaj" onerror="this.src='https://via.placeholder.com/300x300/1e1e2e2e/ffffff?text=Vivek'">
+            </div>
+            <div class="home-content">
+                <p class="home-greeting">Hello, I'm</p>
+                <h1 class="home-name">Vivek Bhardwaj</h1>
+                <p class="home-role">
+                    <span class="typing-text" id="typingText"></span>
+                    <span class="cursor">|</span>
+                </p>
+                <p class="home-desc">Frontend Developer &amp; BTech CSE Student</p>
+                <div class="home-buttons">
+                    <!--
+                    📌 HOW TO ADD YOUR RESUME PDF:
+                    -------------------------------
+                    1. Place your resume PDF file in the same folder as this HTML file.
+                    2. Name it "resume.pdf"
+                    3. The download link below will work automatically.
+
+                    If you use a different name, update the href below.
+                    -->
+                    <a href="resume.pdf" download class="btn btn-primary">
+                        <i class="fas fa-download"></i> Download Resume
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i> Contact Me
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT SECTION ===== -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">About <span>Me</span></h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Currently pursuing <strong>BTech CSE</strong> at <strong>Netaji Subhas University</strong>.</p>
+                    <p><strong>Session:</strong> 2024 – 2028 &nbsp;|&nbsp; <strong>2nd Year Student</strong></p>
+                    <p>Passionate about frontend development and love creating modern, responsive, and user-friendly websites. Always eager to learn new technologies and turn ideas into clean code.</p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <i class="fas fa-user"></i>
+                            <span>Vivek Bhardwaj</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-code"></i>
+                            <span>Frontend Developer</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>BTech CSE (2nd Year)</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Netaji Subhas University</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SKILLS SECTION ===== -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="section-title">My <span>Skills</span></h2>
+            <div class="skills-grid">
+                <div class="skill-card"><i class="fab fa-html5"></i><span>HTML</span></div>
+                <div class="skill-card"><i class="fab fa-css3-alt"></i><span>CSS</span></div>
+                <div class="skill-card"><i class="fab fa-js"></i><span>JavaScript</span></div>
+                <div class="skill-card"><i class="fas fa-mobile-alt"></i><span>Responsive Design</span></div>
+                <div class="skill-card"><i class="fab fa-react"></i><span>Basic React</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== EDUCATION SECTION ===== -->
+    <section id="education" class="education-section">
+        <div class="container">
+            <h2 class="section-title">My <span>Education</span></h2>
+            <div class="education-grid">
+                <div class="edu-card">
+                    <div class="edu-icon"><i class="fas fa-school"></i></div>
+                    <h3>10th (CBSE)</h3>
+                    <p class="edu-year">2022</p>
+                    <p class="edu-score">65.2%</p>
+                </div>
+                <div class="edu-card">
+                    <div class="edu-icon"><i class="fas fa-school"></i></div>
+                    <h3>12th (JAC)</h3>
+                    <p class="edu-year">2024</p>
+                    <p class="edu-score">72.2%</p>
+                </div>
+                <div class="edu-card">
+                    <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3>BTech CSE</h3>
+                    <p class="edu-year">2024 – 2028</p>
+                    <p class="edu-score">Netaji Subhas University</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== HOBBIES / INTERESTS ===== -->
+    <section id="hobbies" class="hobbies-section">
+        <div class="container">
+            <h2 class="section-title">Hobbies &amp; <span>Interests</span></h2>
+            <div class="hobbies-grid">
+                <div class="hobby-card"><i class="fas fa-laptop-code"></i><span>Coding</span></div>
+                <div class="hobby-card"><i class="fas fa-rocket"></i><span>Learning new tech</span></div>
+                <div class="hobby-card"><i class="fas fa-paint-brush"></i><span>Web designing</span></div>
+                <div class="hobby-card"><i class="fas fa-video"></i><span>Watching tech videos</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PROJECTS SECTION ===== -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">My <span>Projects</span></h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-img">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Portfolio Website</h3>
+                    <p>Modern personal portfolio with dark theme, animations, and responsive design.</p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JS</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>Calculator App</h3>
+                    <p>A clean, responsive calculator built with JavaScript – performs basic operations.</p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JS</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">
+                        <i class="fas fa-list-check"></i>
+                    </div>
+                    <h3>To-Do List</h3>
+                    <p>Simple task manager with add, delete, and mark-as-done features. Local storage supported.</p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== RESUME SECTION ===== -->
+    <section id="resume" class="resume-section">
+        <div class="container">
+            <h2 class="section-title">My <span>Resume</span></h2>
+            <div class="resume-content">
+                <p>Download my resume to know more about my education, skills, and experience.</p>
+                <!--
+                📌 RESUME PDF INSTRUCTIONS:
+                ---------------------------
+                Place "resume.pdf" in the same folder as this HTML file.
+                The download button below will work automatically.
+                -->
+                <a href="resume.pdf" download class="btn btn-primary resume-btn">
+                    <i class="fas fa-download"></i> Download Resume (PDF)
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT SECTION ===== -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contact <span>Me</span></h2>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <a href="mailto:bhardwajvivek2122@gmail.com">bhardwajvivek2122@gmail.com</a>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-phone-alt"></i>
+                    <h3>Phone</h3>
+                    <a href="tel:+919835100137">9835100137</a>
+                </div>
+                <div class="contact-card">
+                    <i class="fab fa-linkedin-in"></i>
+                    <h3>LinkedIn</h3>
+                    <a href="https://www.linkedin.com/in/vivek-bhardwaj-9ba425328" target="_blank">Vivek Bhardwaj</a>
+                </div>
+                <div class="contact-card">
+                    <i class="fab fa-github"></i>
+                    <h3>GitHub</h3>
+                    <a href="https://github.com/vivekbhardwaj2221" target="_blank">vivekbhardwaj2122</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <p>&copy; 2026 Vivek Bhardwaj. All rights reserved.</p>
+    </footer>
+
+    <!-- Link to external JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
